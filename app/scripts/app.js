@@ -20,6 +20,9 @@ angular
     'ngTouch'
   ]);
 
-  
+//apparently should be using services for this
+var nationlBalanceApp = nationlBalanceApp || {};
+nationlBalanceApp.helpers = {};
+
 
 

@@ -34,7 +34,7 @@
           </div>
         </div>
         
-        <div class='col-md-2 section'>
+        <div class='col-md-2 section' ng-controller="taxCtrl">
           <p>Tax Breakdown</P>
           <div class='tax_stack'> </div>
         </div>
@@ -79,8 +79,12 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/getUrlParamsHelper.js"></script>
+        <script src="scripts/renderTaxHelper.js"></script>  
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+
+        <script src="scripts/controllers/tax/taxCtrl.js"></script>
+        <script src="scripts/controllers/tax/incomeTaxCtrl.js"></script>
         <!-- endbuild -->
 </body>
 </html>

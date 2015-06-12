@@ -1,3 +1,5 @@
-<div class='capital_taxes'>
+<div class='capital_taxes' ng-controller="capitalTaxesCtrl">
   <p>Capital Taxes</p>
-</div>    
+  <input type="text" ng-model="capitalTaxes.var1" ng-change='calculateCapitalTaxes()'  />
+
+</div>
