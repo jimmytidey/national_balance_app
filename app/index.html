@@ -25,7 +25,7 @@
 
     
     <div class="container-fluid" ng-controller='MainCtrl'>
-      <div class='row'>
+      <div class='row row-container'>
         <div class='col-md-1'></div>
         <div class='col-md-2 section'>
           <div class='tax_edit_mode'>
@@ -34,9 +34,9 @@
           </div>
         </div>
         
-        <div class='col-md-2 section' ng-controller="taxCtrl">
+        <div class='col-md-2 section tax_bar_container'>
           <p>Tax Breakdown</P>
-          <div class='tax_stack'> </div>
+          <div class='tax_bar'> </div>
         </div>
 
         <div class='col-md-2 section'><p>Tax &amp; Spending</p></div>
@@ -82,8 +82,6 @@
         <script src="scripts/getUrlParamsHelper.js"></script>
         <script src="scripts/renderTaxHelper.js"></script>  
         <script src="scripts/controllers/main.js"></script>
-
-        <script src="scripts/controllers/tax/taxCtrl.js"></script>
         <script src="scripts/controllers/tax/incomeTaxCtrl.js"></script>
         <!-- endbuild -->
 </body>
